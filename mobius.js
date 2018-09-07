@@ -28,8 +28,10 @@ global.usecsebase           = 'Mobius';
 global.usecseid             = '/Mobius2';
 global.usecsebaseport       = conf.csebaseport;
 
-global.usedbhost            = 'localhost';
-global.usedbpass            = conf.dbpass;
+//global.usedbhost            = 'localhost';
+//global.usedbpass            = conf.dbpass;
+global.usedbhost            = process.env.MOBIUS_DB_HOST;
+global.usedbpass            = process.env.MOBIUS_DB_PASS;
 
 
 global.usepxywsport         = '7577';
