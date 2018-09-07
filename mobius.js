@@ -31,6 +31,7 @@ global.usecsebaseport       = conf.csebaseport;
 //global.usedbhost            = 'localhost';
 //global.usedbpass            = conf.dbpass;
 global.usedbhost            = process.env.MOBIUS_DB_HOST;
+global.usedbport            = process.env.MOBIUS_DB_PORT;
 global.usedbpass            = process.env.MOBIUS_DB_PASS;
 
 
